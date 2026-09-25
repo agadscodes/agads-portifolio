@@ -3,7 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Alex Rivera — Front-End Developer',
+  title: 'Agada Elija — Front-End Developer',
   description:
     'Front-End developer building fast, accessible, and modern web experiences with React, TypeScript, and Tailwind CSS.',
   generator: 'v0.app',

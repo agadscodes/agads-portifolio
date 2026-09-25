@@ -69,7 +69,7 @@ export function Contact() {
                   required
                   autoComplete="name"
                   className="rounded-lg border border-zinc-800 bg-zinc-950 px-3.5 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:border-emerald-500/60 focus:outline-none focus:ring-1 focus:ring-emerald-500/40"
-                  placeholder="Jane Doe"
+                  placeholder="Tim Cook"
                 />
               </div>
 
@@ -84,7 +84,7 @@ export function Contact() {
                   required
                   autoComplete="email"
                   className="rounded-lg border border-zinc-800 bg-zinc-950 px-3.5 py-2.5 text-sm text-white placeholder:text-zinc-600 focus:border-emerald-500/60 focus:outline-none focus:ring-1 focus:ring-emerald-500/40"
-                  placeholder="jane@example.com"
+                  placeholder="timcook@example.com"
                 />
               </div>
 

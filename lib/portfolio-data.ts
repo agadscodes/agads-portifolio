@@ -1,10 +1,10 @@
 export const profile = {
-  name: "Alex Rivera",
-  monogram: "AR",
+  name: "Agada Elija",
+  monogram: "AE",
   role: "Front-End Developer",
-  email: "hello@alexrivera.dev",
-  github: "https://github.com",
-  linkedin: "https://linkedin.com",
+  email: "elijaagada@gmail.com",
+  github: "https://github.com/agadscodes",
+  linkedin: "https://www.linkedin.com/in/agada-elija-owoicho-227825375/",
   resumeUrl: "/resume.pdf",
 }
 
@@ -55,39 +55,39 @@ export const techStack: {
 
 export const projects = [
   {
-    title: "Insight Analytics",
+    title: "Record Label Website",
     description:
-      "A real-time analytics dashboard that turns raw event streams into clear, actionable KPIs. Solved slow initial loads with server-driven data and optimistic UI.",
-    image: "/projects/analytics-dashboard.png",
-    tags: ["React", "TypeScript", "REST API", "Recharts"],
-    github: "https://github.com",
+      "A modern website for a record label, showcasing artists and releases.",
+    image: "/projects/Record.jpg",
+    tags: ["React", "Css"],
+    github: "https://github.com/agadscodes/Music-Label-Website",
     demo: "https://example.com",
   },
   {
-    title: "Nimbus Store",
+    title: "E-commerce Store",
     description:
-      "A headless e-commerce storefront with a snappy product grid and cart. Reduced bundle size 40% by code-splitting routes and lazy-loading imagery.",
-    image: "/projects/ecommerce-store.png",
-    tags: ["React", "TypeScript", "Tailwind", "Stripe"],
-    github: "https://github.com",
+      "A modern e-commerce website for selling products online.",
+    image: "/projects/SharedScreenshot.jpg",
+    tags: ["JavaScript", "Css", "REST API", "Google Authentication"],
+    github: "https://github.com/agadscodes/ShopEase",
     demo: "https://example.com",
   },
   {
-    title: "Flowboard",
+    title: "Expense Tracker",
     description:
-      "A collaborative kanban board with drag-and-drop and live updates. Tackled state complexity with a normalized store and accessible keyboard interactions.",
-    image: "/projects/task-manager.png",
-    tags: ["React", "TypeScript", "WebSocket", "Vite"],
-    github: "https://github.com",
+      "A simple expense tracking application to manage personal finances.",
+    image: "/projects/Expense.jpg",
+    tags: ["React", "Css", "Vite"],
+    github: "https://github.com/agadscodes/expense-app",
     demo: "https://example.com",
   },
   {
-    title: "Skyward",
+    title: "Todo App",
     description:
-      "A weather forecast app with a glassmorphic UI and location search. Built a resilient fetch layer with caching to gracefully handle flaky networks.",
-    image: "/projects/weather-app.png",
-    tags: ["React", "REST API", "Tailwind"],
-    github: "https://github.com",
+      "A simple todo application built with React and TypeScript.",
+    image: "/projects/Todo.jpg",
+    tags: ["React", "TypeScript", "Vite"],
+    github: "https://github.com/agadscodes/Todo-app-first-react-project",
     demo: "https://example.com",
   },
 ]

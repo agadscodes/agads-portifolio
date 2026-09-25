@@ -22,8 +22,8 @@ export function Hero() {
         </span>
 
         <h1 className="mt-6 text-balance text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
-          {profile.role}
-          <span className="block text-zinc-500">crafting the modern web.</span>
+          {profile.name}
+          <span className="block text-zinc-500">{profile.role}</span>
         </h1>
 
         <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-zinc-400">

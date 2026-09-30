@@ -3,7 +3,7 @@ import { profile } from "@/lib/portfolio-data"
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden">
+    <section id="top" className="hero-fade-in relative overflow-hidden">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 -z-10"

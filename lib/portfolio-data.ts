@@ -67,7 +67,7 @@ export const projects = [
     title: "E-commerce Store",
     description:
       "A modern e-commerce website for selling products online.",
-    image: "/projects/SharedScreenshot.jpg",
+    image: "/projects/SharedScreenshot1.jpg",
     tags: ["JavaScript", "Css", "REST API", "Google Authentication"],
     github: "https://github.com/agadscodes/ShopEase",
     demo: "https://example.com",
@@ -75,19 +75,26 @@ export const projects = [
   {
     title: "Expense Tracker",
     description:
-      "A simple expense tracking application to manage personal finances.",
-    image: "/projects/Expense.jpg",
-    tags: ["React", "Css", "Vite"],
+      "A local-first expense dashboard for recording dated income and spending, tracking category totals, reviewing monthly trends, and exporting transactions to CSV.",
+    image: "/projects/SharedScreenshot.jpg",
+    tags: ["React", "JavaScript", "CSS", "Vite", "Local Storage", "CSV Export"],
     github: "https://github.com/agadscodes/expense-app",
     demo: "https://example.com",
   },
   {
     title: "Todo App",
     description:
-      "A simple todo application built with React and TypeScript.",
-    image: "/projects/Todo.jpg",
-    tags: ["React", "TypeScript", "Vite"],
-    github: "https://github.com/agadscodes/Todo-app-first-react-project",
+      "Northstar is a browser-based workspace for prioritized tasks, tagged notes, and voice memos, with English/Spanish and light-mode settings.",
+    image: "/projects/northstar-dashboard.png",
+    tags: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "IndexedDB",
+      "MediaRecorder",
+    ],
+    github: "https://github.com/agadscodes/todo-notes-app",
     demo: "https://example.com",
   },
 ]

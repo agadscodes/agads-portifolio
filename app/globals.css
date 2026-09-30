@@ -1,6 +1,6 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
-@import 'shadcn/tailwind.css';
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -159,5 +159,126 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+.page-fade-in {
+  animation: page-fade-in 1s ease both;
+}
+
+.hero-fade-in {
+  animation: hero-fade-in 1s ease both;
+}
+
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.scroll-fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 1s ease,
+    transform 1s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.scroll-fade-in.is-pending {
+  opacity: 0;
+  transform: translateY(1rem);
+}
+
+.scroll-fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tech-stack-viewport {
+  overflow: hidden;
+}
+
+.tech-stack-marquee {
+  display: flex;
+  width: max-content;
+  animation: tech-stack-loop 24s linear infinite;
+}
+
+.tech-stack-marquee.is-paused,
+.tech-stack-viewport:hover .tech-stack-marquee,
+.tech-stack-viewport:focus-within .tech-stack-marquee {
+  animation-play-state: paused;
+}
+
+.tech-stack-group {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.tech-stack-card {
+  flex: 0 0 min(85vw, 20rem);
+}
+
+@keyframes tech-stack-loop {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .page-fade-in {
+    animation: none;
+  }
+
+  .hero-fade-in {
+    animation: none;
+  }
+
+  .scroll-fade-in {
+    transition: none;
+  }
+
+  .tech-stack-controls {
+    display: none;
+  }
+
+  .tech-stack-viewport {
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+  }
+
+  .tech-stack-marquee {
+    animation: none;
+  }
+
+  .tech-stack-group[aria-hidden="true"] {
+    display: none;
   }
 }

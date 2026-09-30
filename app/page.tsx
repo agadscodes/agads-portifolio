@@ -4,6 +4,7 @@ import { TechStack } from "@/components/tech-stack"
 import { Projects } from "@/components/projects"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
+import { FadeIn } from "@/components/fade-in"
 
 export default function Page() {
   return (
@@ -11,11 +12,19 @@ export default function Page() {
       <Navbar />
       <main>
         <Hero />
-        <TechStack />
-        <Projects />
-        <Contact />
+        <FadeIn>
+          <TechStack />
+        </FadeIn>
+        <FadeIn>
+          <Projects />
+        </FadeIn>
+        <FadeIn>
+          <Contact />
+        </FadeIn>
       </main>
-      <Footer />
+      <FadeIn>
+        <Footer />
+      </FadeIn>
     </div>
   )
 }
